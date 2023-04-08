@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Name in Large Font</title>
+	<style>
+		.large {
+			font-size: 3em;
+		}
+	</style>
+</head>
+<body>
+	<p>What's your name?</p>
+	<input type="text" id="nameInput">
+	<button onclick="displayName()">Submit</button>
+	<p id="nameOutput"></p>
+	
+	<script>
+		function displayName() {
+			var name = document.getElementById("nameInput").value;
+			document.getElementById("nameOutput").innerHTML = name;
+			document.getElementById("nameOutput").classList.add("large");
+		}
+	</script>
+</body>
+</html>
